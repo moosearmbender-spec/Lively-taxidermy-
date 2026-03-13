@@ -2,43 +2,156 @@
 <html>
 <head>
 <title>Lively Taxidermy</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 body{
+margin:0;
 font-family:Arial;
-background:#1f1f1f;
+background:#111;
 color:white;
+}
+
+header{
+background:#000;
+padding:20px;
+text-align:center;
+border-bottom:3px solid #ff6600;
+}
+
+header h1{
+color:#ff6600;
+font-size:42px;
+margin:0;
+}
+
+nav{
+text-align:center;
+background:#1a1a1a;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+.hero{
+height:500px;
+background-image:url('https://images.unsplash.com/photo-1546182990-dffeafbe841d');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 }
-h1{
-color:#ff6a00;
+
+.hero h2{
 font-size:48px;
+background:rgba(0,0,0,.6);
+padding:20px;
+border:2px solid #ff6600;
 }
-img{
-max-width:90%;
-border-radius:10px;
+
+.section{
+padding:50px;
+text-align:center;
 }
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border:3px solid #ff6600;
+}
+
+footer{
+background:#000;
+padding:20px;
+text-align:center;
+border-top:3px solid #ff6600;
+}
+
 </style>
+
 </head>
 
 <body>
 
+<header>
 <h1>Lively Taxidermy</h1>
+</header>
 
-<h2>Lebanon, Missouri</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<p>Bring Your Trophy Back To Life</p>
+<div class="hero">
+<h2>Professional Whitetail Taxidermy</h2>
+</div>
 
-<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d">
+<div class="section">
 
-<h3>Call for Pricing</h3>
+<h2>Quality Mounts Built to Last</h2>
 
-<p>Whitetail Shoulder Mounts</p>
-<p>European Mounts</p>
-<p>Antler Plaques</p>
+<p>
+At Lively Taxidermy we specialize in professional whitetail mounts,
+European mounts, and custom work for hunters who want their trophies preserved the right way.
+</p>
+
+</div>
+
+<div class="section" id="gallery">
+
+<h2>Recent Mounts</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1601758123927-1961c6a41d3b">
+<img src="https://images.unsplash.com/photo-1501706362039-c6e13a7aab1c">
+<img src="https://images.unsplash.com/photo-1511203466129-824e631920d4">
+
+</div>
+
+</div>
+
+<div class="section" id="pricing">
+
+<h2>Pricing</h2>
+
+<p>Shoulder Mounts – Call for Pricing</p>
+<p>European Mounts – Call for Pricing</p>
+<p>Custom Work Available</p>
+
+</div>
+
+<div class="section" id="contact">
 
 <h2>Contact</h2>
 
-<p>📞 573-528-8732</p>
+<p>Call or Text</p>
 
-</body>in
+<h3>417-XXX-XXXX</h3>
+
+</div>
+
+<footer>
+
+<p>© Lively Taxidermy</p>
+
+</footer>
+
+</body>
 </html>
