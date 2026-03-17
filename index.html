@@ -8,107 +8,148 @@
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Georgia, serif;
 background:#0b0b0b;
 color:white;
 }
 
 header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
 background:black;
-padding:20px;
-text-align:center;
-border-bottom:4px solid #ff6a00;
+border-bottom:3px solid #ff6a00;
 }
 
-header img{
-width:240px;
-}
-
-nav{
-background:#1a1a1a;
-padding:14px;
-text-align:center;
+.logo{
+font-size:28px;
+color:#ff6a00;
+font-weight:bold;
 }
 
 nav a{
+margin:0 15px;
 color:white;
-margin:18px;
-font-size:18px;
 text-decoration:none;
+font-size:18px;
 }
 
 nav a:hover{
 color:#ff6a00;
 }
 
-.hero{
-height:650px;
-background:url("IMG_4773.jpeg") center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-}
-
-.hero h1{
-font-size:55px;
-background:rgba(0,0,0,.7);
-padding:30px 50px;
-border:4px solid #ff6a00;
-}
-
-.section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-text-align:center;
-}
-
-.section h2{
+.phone{
 color:#ff6a00;
-font-size:38px;
-margin-bottom:40px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.gallery img{
-width:100%;
-border-radius:8px;
-border:4px solid #ff6a00;
-transition:0.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-.call{
-display:inline-block;
-margin-top:30px;
-padding:20px 45px;
-background:#ff6a00;
-color:white;
-font-size:24px;
-text-decoration:none;
-border-radius:6px;
 font-weight:bold;
 }
 
-.map{
-margin-top:40px;
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 60px;
+background:#1a1a1a;
+}
+
+.hero-left{
+max-width:500px;
+}
+
+.hero-left img{
+width:220px;
+margin-bottom:20px;
+}
+
+.hero-left h1{
+font-size:40px;
+color:#ff6a00;
+margin:10px 0;
+}
+
+.hero-left h2{
+font-size:24px;
+font-weight:normal;
+}
+
+.hero-right img{
+width:420px;
+border-radius:8px;
+}
+
+.intro{
+text-align:center;
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:60px;
+}
+
+.service-box{
+background:#161616;
+padding:20px;
+border-radius:8px;
+text-align:center;
+border:2px solid #ff6a00;
+}
+
+.service-box img{
+width:100%;
+border-radius:6px;
+margin-top:10px;
+}
+
+.service-box h3{
+color:#ff6a00;
+}
+
+.gallery{
+padding:60px;
+text-align:center;
+}
+
+.gallery h2{
+color:#ff6a00;
+margin-bottom:40px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:6px;
+border:3px solid #ff6a00;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff6a00;
+color:white;
+text-decoration:none;
+font-size:18px;
+border-radius:6px;
 }
 
 footer{
+margin-top:50px;
 background:black;
-padding:30px;
+padding:25px;
 text-align:center;
-border-top:4px solid #ff6a00;
-margin-top:60px;
+border-top:3px solid #ff6a00;
 }
 
 </style>
@@ -117,61 +158,105 @@ margin-top:60px;
 <body>
 
 <header>
-<img src="IMG_4754.jpeg">
-</header>
+
+<div class="logo">LIVELY TAXIDERMY</div>
 
 <nav>
 <a href="#">Home</a>
+<a href="#">Pricing</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero">
-<h1>Bring Your Trophy Back To Life</h1>
+<div class="phone">573-528-8732</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<img src="IMG_4754.jpeg">
+
+<h1>Lively Taxidermy</h1>
+
+<h2>Bring Your Trophy Back To Life</h2>
+
 </div>
 
-<div class="section">
-
-<h2>Missouri Whitetail Taxidermy</h2>
-
-<p>
-At Lively Taxidermy we specialize in high quality whitetail shoulder mounts and
-European mounts. Every trophy is mounted with attention to detail so your deer
-looks just as good on the wall as it did in the woods.
-</p>
-
-</div>
-
-<div class="section" id="gallery">
-
-<h2>Recent Mounts</h2>
-
-<div class="gallery">
+<div class="hero-right">
 
 <img src="IMG_4773.jpeg">
+
+</div>
+
+</section>
+
+<section class="intro">
+
+<p>
+Lively Taxidermy in Lebanon, Missouri specializes in professional whitetail deer
+mounts, European mounts, and quality trophy preservation. Every mount is carefully
+crafted to bring your trophy back to life.
+</p>
+
+</section>
+
+<section class="services">
+
+<div class="service-box">
+
+<h3>Professional Deer Mounts</h3>
+
+<img src="IMG_4744.jpeg">
+
+<p>Lifelike whitetail shoulder mounts.</p>
+
+</div>
+
+<div class="service-box">
+
+<h3>European Mounts</h3>
+
+<img src="IMG_4753.jpeg">
+
+<p>Expertly cleaned and mounted.</p>
+
+</div>
+
+<div class="service-box">
+
+<h3>Quality Craftsmanship</h3>
+
+<img src="IMG_4773jpeg">
+
+<p>Detailed high-quality taxidermy work.</p>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2>Recent Work from Lively Taxidermy</h2>
+
+<div class="gallery-grid">
+
 <img src="IMG_4780.jpeg">
+<img src="IMG_4773.jpeg">
 <img src="IMG_4771.jpeg">
 <img src="IMG_4746.jpeg">
 <img src="IMG_4744.jpeg">
-<img src=48ACDC25-84D9-40E0-8598-73AA71FCD492.png>
 
 </div>
 
-</div>
+<a class="button">VIEW GALLERY</a>
 
-<div class="section" id="contact">
+</section>
 
-<h2>Contact Lively Taxidermy</h2>
+<footer id="contact">
 
-<p>Call or Text Anytime</p>
-
-<h1>573-528-8732</h1>
-
-<a class="call" href="tel:5735288732">CALL NOW</a>
-
-</div>
-
-<footer>
+<p>📞 (573) 528-8732 | Lebanon, Missouri</p>
 
 <p>© Lively Taxidermy</p>
 
