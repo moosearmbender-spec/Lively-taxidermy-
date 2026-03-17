@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Lively Taxidermy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,27 +10,37 @@
 body{
 margin:0;
 font-family:Georgia, serif;
-background:#0b0b0b;
 color:white;
+background:#0b0b0b url("https://www.transparenttextures.com/patterns/dark-matter.png");
 }
+
+/* HEADER /
 
 header{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 padding:20px 40px;
-background:black;
-border-bottom:3px solid #ff6a00;
+background:#0a0a0a;
+border-bottom:4px solid #ff6a00;
+box-shadow:0 0 20px #000;
 }
 
 .logo{
-font-size:28px;
 color:#ff6a00;
+font-size:32px;
 font-weight:bold;
+letter-spacing:2px;
+text-shadow:0 0 12px #ff6a00;
+}
+
+nav{
+flex:1;
+text-align:center;
 }
 
 nav a{
-margin:0 15px;
+margin:0 20px;
 color:white;
 text-decoration:none;
 font-size:18px;
@@ -42,117 +53,156 @@ color:#ff6a00;
 .phone{
 color:#ff6a00;
 font-weight:bold;
+font-size:18px;
 }
+
+/ HERO /
 
 .hero{
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:80px 60px;
-background:#1a1a1a;
+padding:90px 60px;
+border-top:2px solid #3a1a00;
+border-bottom:2px solid #3a1a00;
 }
 
 .hero-left{
-max-width:500px;
+width:45%;
 }
 
 .hero-left img{
-width:220px;
+width:200px;
 margin-bottom:20px;
 }
 
 .hero-left h1{
-font-size:40px;
+font-size:52px;
 color:#ff6a00;
-margin:10px 0;
+margin:0;
+text-shadow:0 0 15px #ff6a00;
 }
 
 .hero-left h2{
-font-size:24px;
-font-weight:normal;
+font-size:26px;
+margin-top:12px;
+}
+
+.hero-right{
+width:45%;
 }
 
 .hero-right img{
-width:420px;
+width:100%;
 border-radius:8px;
+box-shadow:0 0 30px rgba(0,0,0,.7);
 }
+
+/ INTRO /
 
 .intro{
 text-align:center;
-padding:60px 20px;
 max-width:900px;
 margin:auto;
-font-size:18px;
-line-height:1.6;
+padding:70px 20px;
+font-size:19px;
+line-height:1.7;
 }
+
+/ SERVICE CARDS /
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-padding:60px;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+padding:50px 70px;
 }
 
-.service-box{
-background:#161616;
-padding:20px;
-border-radius:8px;
-text-align:center;
-border:2px solid #ff6a00;
+.card{
+background:#111;
+border:3px solid #ff6a00;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(0,0,0,.6);
 }
 
-.service-box img{
-width:100%;
-border-radius:6px;
-margin-top:10px;
-}
-
-.service-box h3{
+.card h3{
 color:#ff6a00;
+text-align:center;
+padding:16px;
+margin:0;
+font-size:22px;
+text-shadow:0 0 10px #ff6a00;
 }
+
+.card img{
+width:100%;
+}
+
+.card p{
+padding:15px;
+text-align:center;
+}
+
+/ GALLERY /
 
 .gallery{
-padding:60px;
+padding:70px;
 text-align:center;
+border-top:2px solid #3a1a00;
 }
 
 .gallery h2{
 color:#ff6a00;
-margin-bottom:40px;
+font-size:36px;
+margin-bottom:35px;
+text-shadow:0 0 12px #ff6a00;
 }
 
 .gallery-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
 .gallery-grid img{
 width:100%;
-border-radius:6px;
 border:3px solid #ff6a00;
+border-radius:6px;
+transition:.3s;
 }
 
-.button{
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.gallery-button{
 display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#ff6a00;
-color:white;
+margin-top:35px;
+padding:15px 40px;
+border:2px solid #ff6a00;
+color:#ff6a00;
 text-decoration:none;
 font-size:18px;
-border-radius:6px;
 }
 
+.gallery-button:hover{
+background:#ff6a00;
+color:white;
+}
+
+/ FOOTER */
+
 footer{
-margin-top:50px;
+margin-top:60px;
+padding:30px;
 background:black;
-padding:25px;
 text-align:center;
-border-top:3px solid #ff6a00;
+border-top:4px solid #ff6a00;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -168,7 +218,7 @@ border-top:3px solid #ff6a00;
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="phone">573-528-8732</div>
+<div class="phone">📞 573-528-8732</div>
 
 </header>
 
@@ -195,43 +245,31 @@ border-top:3px solid #ff6a00;
 <section class="intro">
 
 <p>
-Lively Taxidermy in Lebanon, Missouri specializes in professional whitetail deer
-mounts, European mounts, and quality trophy preservation. Every mount is carefully
-crafted to bring your trophy back to life.
+Lively Taxidermy in Lebanon, Missouri specializes in professional whitetail deer mounts,
+European mounts, and quality trophy preservation. Every mount is carefully crafted
+to bring your trophy back to life.
 </p>
 
 </section>
 
 <section class="services">
 
-<div class="service-box">
-
+<div class="card">
 <h3>Professional Deer Mounts</h3>
-
-<img src="IMG_4744.jpeg">
-
+<img src="IMG_4771.jpeg">
 <p>Lifelike whitetail shoulder mounts.</p>
-
 </div>
 
-<div class="service-box">
-
+<div class="card">
 <h3>European Mounts</h3>
-
 <img src="IMG_4753.jpeg">
-
 <p>Expertly cleaned and mounted.</p>
-
 </div>
 
-<div class="service-box">
-
+<div class="card">
 <h3>Quality Craftsmanship</h3>
-
-<img src="IMG_4773jpeg">
-
+<img src="IMG_4744.jpeg">
 <p>Detailed high-quality taxidermy work.</p>
-
 </div>
 
 </section>
@@ -242,15 +280,14 @@ crafted to bring your trophy back to life.
 
 <div class="gallery-grid">
 
-<img src="IMG_4780.jpeg">
-<img src="IMG_4773.jpeg">
+<img src="IMG_4744.jpeg">
 <img src="IMG_4771.jpeg">
 <img src="IMG_4746.jpeg">
-<img src="IMG_4744.jpeg">
+<img src="IMG_47480.jpeg">
 
 </div>
 
-<a class="button">VIEW GALLERY</a>
+<a class="gallery-button">VIEW GALLERY</a>
 
 </section>
 
