@@ -8,199 +8,107 @@
 
 body{
 margin:0;
-font-family:Georgia, serif;
+font-family:Arial;
+background:#0b0b0b;
 color:white;
-background:#0a0a0a;
 }
-
-/* HEADER OVERLAY */
 
 header{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:15px 40px;
-background:rgba(0,0,0,.75);
-border-bottom:2px solid #ff6a00;
-z-index:10;
+background:black;
+padding:20px;
+text-align:center;
+border-bottom:4px solid #ff6a00;
 }
 
-.logo{
-color:#ff6a00;
-font-size:24px;
-font-weight:bold;
-letter-spacing:1px;
+header img{
+width:240px;
 }
 
 nav{
-flex:1;
+background:#1a1a1a;
+padding:14px;
 text-align:center;
 }
 
 nav a{
-margin:0 15px;
 color:white;
+margin:18px;
+font-size:18px;
 text-decoration:none;
-font-size:16px;
 }
 
 nav a:hover{
 color:#ff6a00;
 }
 
-.phone{
+.hero{
+height:650px;
+background:url("IMG_4746.jpeg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+background:rgba(0,0,0,.7);
+padding:30px 50px;
+border:4px solid #ff6a00;
+}
+
+.section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+.section h2{
 color:#ff6a00;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+border:4px solid #ff6a00;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.call{
+display:inline-block;
+margin-top:30px;
+padding:20px 45px;
+background:#ff6a00;
+color:white;
+font-size:24px;
+text-decoration:none;
+border-radius:6px;
 font-weight:bold;
 }
 
-/* HERO EXACT STYLE */
-
-.hero{
-height:520px;
-background:url("IMG_4773.jpeg") right center/cover no-repeat;
-position:relative;
-}
-
-/* LEFT DARK PANEL (THIS IS THE KEY MATCH) */
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:55%;
-height:100%;
-background:linear-gradient(to right, rgba(0,0,0,.9) 60%, transparent);
-}
-
-/* HERO CONTENT */
-
-.hero-content{
-position:relative;
-z-index:2;
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding-left:60px;
-max-width:500px;
-}
-
-.hero-content img{
-width:150px;
-margin-bottom:15px;
-}
-
-.hero-content h1{
-margin:0;
-font-size:42px;
-color:#ff6a00;
-}
-
-.hero-content h2{
-margin-top:8px;
-font-size:20px;
-font-weight:normal;
-}
-
-/* RUSTIC DIVIDER */
-
-.divider{
-height:6px;
-background:#2b1400;
-border-top:2px solid #ff6a00;
-border-bottom:2px solid #000;
-}
-
-/* INTRO */
-
-.intro{
-text-align:center;
-padding:40px 20px;
-max-width:800px;
-margin:auto;
-font-size:16px;
-line-height:1.6;
-}
-
-/* SERVICES EXACT LOOK */
-
-.services{
-display:flex;
-gap:15px;
-padding:30px 40px;
-}
-
-.card{
-flex:1;
-background:#111;
-border:2px solid #ff6a00;
-}
-
-.card h3{
-margin:0;
-padding:10px;
-text-align:center;
-color:#ff6a00;
-font-size:18px;
-}
-
-.card img{
-width:100%;
-display:block;
-}
-
-.card p{
-padding:10px;
-text-align:center;
-font-size:14px;
-}
-
-/* GALLERY STRIP */
-
-.gallery{
-padding:40px;
-text-align:center;
-}
-
-.gallery h2{
-color:#ff6a00;
-margin-bottom:20px;
-}
-
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:10px;
-}
-
-.gallery-grid img{
-width:100%;
-border:2px solid #ff6a00;
-}
-
-/* BUTTON */
-
-.btn{
-margin-top:20px;
-display:inline-block;
-padding:10px 25px;
-border:2px solid #ff6a00;
-color:#ff6a00;
-text-decoration:none;
-font-size:14px;
+.map{
+margin-top:40px;
 }
 
 footer{
-margin-top:40px;
-padding:20px;
+background:black;
+padding:30px;
 text-align:center;
-background:#000;
-border-top:2px solid #ff6a00;
+border-top:4px solid #ff6a00;
+margin-top:60px;
 }
 
 </style>
@@ -209,77 +117,64 @@ border-top:2px solid #ff6a00;
 <body>
 
 <header>
-<div class="logo">LIVELY TAXIDERMY</div>
+<img src="IMG_4754.jpeg">
+</header>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">Pricing</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="phone">573-528-8732</div>
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-<img src="IMG_4754.jpeg">
-<h1>Lively Taxidermy</h1>
-<h2>Bring Your Trophy Back To Life</h2>
+<div class="hero">
+<h1>Bring Your Trophy Back To Life</h1>
 </div>
 
-</section>
+<div class="section">
 
-<div class="divider"></div>
+<h2>Missouri Whitetail Taxidermy</h2>
 
-<section class="intro">
 <p>
-Lively Taxidermy specializes in high-quality whitetail mounts and European mounts.
-Every trophy is crafted with detail to bring it back to life.
+At Lively Taxidermy we specialize in high quality whitetail shoulder mounts and
+European mounts. Every trophy is mounted with attention to detail so your deer
+looks just as good on the wall as it did in the woods.
 </p>
-</section>
 
-<section class="services">
-
-<div class="card">
-<h3>Shoulder Mounts</h3>
-<img src="IMG_4773.jpeg">
-<p>Professional lifelike mounts.</p>
 </div>
 
-<div class="card">
-<h3>European Mounts</h3>
-<img src="IMG_4744.jpeg">
-<p>Clean and detailed skull mounts.</p>
-</div>
+<div class="section" id="gallery">
 
-<div class="card">
-<h3>Custom Work</h3>
-<img src="IMG_4744.jpeg">
-<p>High quality craftsmanship.</p>
-</div>
+<h2>Recent Mounts</h2>
 
-</section>
+<div class="gallery">
 
-<section class="gallery" id="gallery">
-
-<h2>Recent Work</h2>
-
-<div class="gallery-grid">
-<img src="IMG_4773.jpeg">
 <img src="IMG_4780.jpeg">
+<img src="IMG_4773.jpeg">
 <img src="IMG_4771.jpeg">
+<img src="IMG_4744.jpeg">
 <img src="IMG_4746.jpeg">
+<img src="IMG_4753.jpeg">
+
 </div>
 
-<a class="btn">VIEW GALLERY</a>
+</div>
 
-</section>
+<div class="section" id="contact">
 
-<footer id="contact">
-<p>573-528-8732 | Lebanon, Missouri</p>
+<h2>Contact Lively Taxidermy</h2>
+
+<p>Call or Text Anytime</p>
+
+<h1>573-528-8732</h1>
+
+<a class="call" href="tel:5735288732">CALL NOW</a>
+
+</div>
+
+<footer>
+
 <p>© Lively Taxidermy</p>
+
 </footer>
 
 </body>
