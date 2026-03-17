@@ -9,7 +9,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0f0f0f;
+background:#0b0b0b;
 color:white;
 }
 
@@ -21,18 +21,18 @@ border-bottom:4px solid #ff6a00;
 }
 
 header img{
-width:220px;
+width:240px;
 }
 
 nav{
 background:#1a1a1a;
-padding:12px;
+padding:14px;
 text-align:center;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin:18px;
 font-size:18px;
 text-decoration:none;
 }
@@ -42,8 +42,8 @@ color:#ff6a00;
 }
 
 .hero{
-height:500px;
-background:url("IMG_4746.jpeg") center/cover;
+height:650px;
+background:url("IMG_4746.jpeg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -51,28 +51,28 @@ text-align:center;
 }
 
 .hero h1{
-font-size:50px;
-background:rgba(0,0,0,.65);
-padding:25px 40px;
-border:3px solid #ff6a00;
+font-size:55px;
+background:rgba(0,0,0,.7);
+padding:30px 50px;
+border:4px solid #ff6a00;
 }
 
 .section{
-padding:70px 20px;
-max-width:1100px;
+padding:80px 20px;
+max-width:1200px;
 margin:auto;
 text-align:center;
 }
 
 .section h2{
 color:#ff6a00;
-font-size:36px;
-margin-bottom:30px;
+font-size:38px;
+margin-bottom:40px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
@@ -80,26 +80,35 @@ gap:25px;
 width:100%;
 border-radius:8px;
 border:4px solid #ff6a00;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 .call{
 display:inline-block;
 margin-top:30px;
-padding:18px 40px;
+padding:20px 45px;
 background:#ff6a00;
 color:white;
-font-size:22px;
+font-size:24px;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
 }
 
+.map{
+margin-top:40px;
+}
+
 footer{
 background:black;
-padding:25px;
+padding:30px;
 text-align:center;
 border-top:4px solid #ff6a00;
-margin-top:50px;
+margin-top:60px;
 }
 
 </style>
@@ -108,33 +117,27 @@ margin-top:50px;
 <body>
 
 <header>
-
 <img src="IMG_4754.jpeg">
-
 </header>
 
 <nav>
-
 <a href="#">Home</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 <div class="hero">
-
 <h1>Bring Your Trophy Back To Life</h1>
-
 </div>
 
 <div class="section">
 
-<h2>Professional Whitetail Taxidermy</h2>
+<h2>Missouri Whitetail Taxidermy</h2>
 
 <p>
-Lively Taxidermy specializes in high quality whitetail shoulder mounts and
-European mounts. Every trophy is mounted with attention to detail so your
-deer looks just as good on the wall as it did in the woods.
+At Lively Taxidermy we specialize in high quality whitetail shoulder mounts and
+European mounts. Every trophy is mounted with attention to detail so your deer
+looks just as good on the wall as it did in the woods.
 </p>
 
 </div>
@@ -145,11 +148,12 @@ deer looks just as good on the wall as it did in the woods.
 
 <div class="gallery">
 
-<img src="IMG_4747.jpeg">
-  
-<img src="IMG_4753.jpeg">
-  
 <img src="IMG_4744.jpeg">
+<img src="IMG_4745.jpeg">
+<img src="IMG_4746.jpeg">
+<img src="IMG_4747.jpeg">
+<img src="IMG_4750.jpeg">
+<img src="IMG_4753.jpeg">
 
 </div>
 
